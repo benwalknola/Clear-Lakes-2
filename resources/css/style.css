@@ -323,7 +323,7 @@ h2 {
 }
 
 .act-heading {
-  font-size: 50px;
+  font-size: 55px;
   color: black;
 }
 
@@ -356,57 +356,128 @@ h2 {
 
 /* Animals Section */
 
-
 .animals-section {
   background-color: #19191c;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid #e3e3e3;
-  padding-bottom: 10%;
 }
 
-.animals-section h2 {
-  font-size: 205%;
-  font-weight: lighter;
-  padding-top: 4%;
-  padding-bottom: 2%;
-  color: #e3e3e3;
+.content p {
+  color: white;
 }
 
-.animals-section p {
-  color: #e3e3e3;
+/* Slider */
+
+.slide-btn-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
 }
 
-.animals-showcase {
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-top: 5%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
-.animal-list {
-  display: grid;
-  align-items: center;
-  grid-gap: 7px 7px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 100%;
+.slide.current {
+  opacity: 1;
 }
 
-.animal-list img {
-  width: 100%;
-  height: auto;
-  -webkit-filter: blur(3px);
-	filter: blur(2px);
-	-webkit-transition: .3s ease-in-out;
-	transition: .2s ease-in-out;
+.slide .content h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+  }
+
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  opacity: 1;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
 }
 
-.animal-list img:hover {
-  -webkit-filter: blur(0);
-	filter: blur(0);
+.slide .content p {
+  color: black;
+  margin-top: 22px;
+  text-align: center;
 }
+
+.slide.current .content {
+    opacity: .8;
+    transform: translateX(600);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.slide:first-child {
+  background: url(../images/deer.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url(../images/sheep.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url(../images/flamingo.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(4) {
+  background: url(../images/bear.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(5) {
+  background: url(../images/moose.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(6) {
+  background: url(../images/peacock.jpg) no-repeat center center/cover;
+}
+
+/* End Slider */
+
 /* End Animals */
 
 /* Creative Activities */
@@ -426,6 +497,12 @@ h2 {
   width: 100%;
   height: auto;
 }
+
+.creative-item p {
+  color: #e3e3e3;
+}
+
+
 
 .creative-item img {
   width: 100%;
@@ -551,5 +628,14 @@ input[type="submit"] {
    color: #e3e3e3;
  }
 
+
+ @media screen and (max-width: 500px) {
+   .slide .content {
+     bottom: -300px;
+     left: 0;
+     width: 100%;
+   }
+
+ }
 
  
