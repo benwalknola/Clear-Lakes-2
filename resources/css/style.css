@@ -358,6 +358,7 @@ h2 {
 
 .animals-section {
   background-color: #19191c;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .content p {
@@ -380,7 +381,24 @@ h2 {
   width: 100vh;
 }
 
+.slider-2 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+}
+
 .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide-2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -394,7 +412,18 @@ h2 {
   opacity: 1;
 }
 
+.slide-2.current-2 {
+  opacity: 1;
+}
+
 .slide .content h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+  }
+
+  .slide-2 .content-2 h3 {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -413,7 +442,25 @@ h2 {
   padding: 35px;
 }
 
+.slide-2 .content-2 {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  opacity: 1;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+
 .slide .content p {
+  color: black;
+  margin-top: 22px;
+  text-align: center;
+}
+
+.slide-2 .content-2 p {
   color: black;
   margin-top: 22px;
   text-align: center;
@@ -422,8 +469,15 @@ h2 {
 .slide.current .content {
     opacity: .8;
     transform: translateX(600);
-    transition: all 0.7s ease-in-out 0.3s;
+    transition: all 0.7s ease-in-out;
 }
+
+.slide-2.current-2 .content-2 {
+  opacity: .8;
+  transform: translateX(600);
+  transition: all 0.7s ease-in-out ;
+}
+
 
 .buttons button#next {
   position: absolute;
@@ -431,7 +485,19 @@ h2 {
   right: 15px;
 }
 
+.buttons-2 button#next-2 {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
 .buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons-2 button#prev-2 {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -447,10 +513,29 @@ h2 {
   outline: none;
 }
 
+.buttons-2 button {
+  border: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
 .buttons button:hover {
   background-color: white;
   color: #333;
 }
+
+.buttons-2 button:hover {
+  background-color: white;
+  color: #333;
+}
+
+
+
+/* Slide 1 */
 
 .slide:first-child {
   background: url(../images/deer.jpg) no-repeat center center/cover;
@@ -475,6 +560,34 @@ h2 {
 .slide:nth-child(6) {
   background: url(../images/peacock.jpg) no-repeat center center/cover;
 }
+
+/* Slide 2 */
+
+.slide-2:first-child {
+  background: url(../images/location-1.jpg) no-repeat center center/cover;
+}
+
+.slide-2:nth-child(2) {
+  background: url(../images/location-2.jpg) no-repeat center center/cover;
+}
+
+.slide-2:nth-child(3) {
+  background: url(../images/location-3.jpg) no-repeat center center/cover;
+}
+
+.slide-2:nth-child(4) {
+  background: url(../images/location-4.jpg) no-repeat center center/cover;
+}
+
+.slide-2:nth-child(5) {
+  background: url(../images/location-5.jpg) no-repeat center center/cover;
+}
+
+.slide-2:nth-child(6) {
+  background: url(../images/location-6.jpg) no-repeat center center/cover;
+}
+
+
 
 /* End Slider */
 
