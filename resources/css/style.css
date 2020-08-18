@@ -249,7 +249,6 @@ h2 {
 }
 
 .secondary-heading {
-
   text-align: center;
   font-size: 52px;
   padding-top: 10%;
@@ -366,6 +365,10 @@ h2 {
 }
 
 /* Slider */
+
+.slider-flex-container {
+  display: flex;
+}
 
 .slide-btn-container {
   position: relative;
@@ -546,7 +549,7 @@ h2 {
 }
 
 .slide:nth-child(3) {
-  background: url(../images/flamingo.jpg) no-repeat center center/cover;
+  background: url(../images/bison.jpg) no-repeat center center/cover;
 }
 
 .slide:nth-child(4) {
@@ -554,7 +557,7 @@ h2 {
 }
 
 .slide:nth-child(5) {
-  background: url(../images/moose.jpg) no-repeat center center/cover;
+  background: url(../images/swan.jpg) no-repeat center center/cover;
 }
 
 .slide:nth-child(6) {
