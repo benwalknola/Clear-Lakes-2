@@ -48,12 +48,12 @@ let nextSlide2 = () => {
 
 
 let prevSlide2 = () => {
-    const current2 = document.querySelector('current-2');
+    const current2 = document.querySelector('.current-2');
     current2.classList.remove('current-2')
     if (current2.previousElementSibling) {
         current2.previousElementSibling.classList.add('current-2') 
     } else {
-        slides2[slides2.length - 1].classList.add('.current-2')
+        slides2[slides2.length - 1].classList.add('current-2')
     }
     setTimeout(() => current2.classList.remove('current-2'));
 }
