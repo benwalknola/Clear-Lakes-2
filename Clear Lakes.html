@@ -287,23 +287,30 @@
       <div class="sign-up">
         <h2>Sign Up for our Newsletter!</h2>
         <form class="news-form">
-          <label class="form-label" for="name">First Name</label>
-          <input type="text" name="Name" id="first-name"></input>
+          <div class="newsletter-flex">
+            <div class="form-flex">
+              <label class="form-label" for="name">First Name</label>
+              <input type="text" name="Name" id="first-name">
+    
+              <label class="form-label" for="Email">Email</label>
+              <input type="email" name="email" id="email">
+    
+            </div>
+            <div class="form-flex">
+              <label class="form-label" for="name">Last Name</label>
+              <input type="text" name="last-name" id="last-name">
 
-          <label class="form-label" for="name">Last Name</label>
-          <input type="text" name="last-name" id="last-name"></input>
+              <label class="form-label" for="telephone">Phone</label>
+              <input type="tel" name="telephone" id="telephone">  
+            </div>
+          </div>
 
-          <label class="form-label" for="Email">Email</label>
-          <input type="email" name="email" id="email"></input>
+          <label class="form-label find-us" for="find-us">How did you find us?</label>
+          <input type="text" name="for-us" id="find-us">
 
-          <label class="form-label" for="telephone">Phone</label>
-          <input type="tel" name="telephone" id="telephone"></input>
+          <input class="sbmt-bttn" id="sbmt-bttn" type="submit" value="Submit">
 
 
-          <label class="form-label" for ="find-us">How did you find us?</label>
-          <textarea class="form-label" id="find-us" name="find-us"></textarea>
-
-          <input id="sbmt-bttn" type="submit" value="Submit">
         </form>
       </div>
     </section>

@@ -740,6 +740,24 @@ h2 {
 
 /* Newsletter */
 
+.newsletter {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  background-color: #19191c;
+  color: #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  padding-bottom: 7%;
+  positioN: relative;
+  z-index: 200;
+}
+
+
+.newsletter h2 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: lighter;
+}
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -755,43 +773,38 @@ h2 {
  width: 120%;
 }
 
-.newsletter {
-  font-family: 'Roboto';
-  font-weight: lighter;
-  background-color: #19191c;
-  color: #e3e3e3;
-  border-top: 1px solid #e3e3e3;
-  padding-bottom: 7%;
-  positioN: relative;
-  z-index: 200;
+.newsletter-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-flex {
+  margin: 20px;
 }
 
 .form-label {
   display: block;
   text-align: center;
-  padding: 3%;
+  padding: 2.4%;
 }
 
-textarea#find-us {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  margin-bottom: 25px;
-}
-
-
-.newsletter h2 {
-  text-align: center;
-  font-weight: lighter;
+.find-us {
+  padding: 1%;
 }
 
 input {
   display: block;
+  padding: 7px;
+  margin: 25px;
   margin-left: auto;
   margin-right: auto;
 }
 
+input#for-us {
+  padding: 20px;
+}
 
 input[type="submit"] {
   font-family: 'Raleway';
@@ -805,6 +818,12 @@ input[type="submit"] {
   width: auto;
   height: auto;
   margin-top: 3%;
+}
+
+input[type="submit"]:hover {
+  background-color: whitesmoke;
+  color: #19191c;
+  transition: ease .2s;
 }
 
 /* End Newsletter */
