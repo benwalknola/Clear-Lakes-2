@@ -1,6 +1,6 @@
  /* Custom Fonts */
 
- @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 @font-face {
   font-family:'TanoheSans';
@@ -230,10 +230,10 @@ h2 {
 /* End btn */
 
 .main-content {
-  font-family: 'Raleway', arial, sans-serif;
+  font-family: 'Roboto', arial, sans-serif;
   display: block;
   background-color: #fff;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 20px;
 }
 
@@ -257,6 +257,7 @@ h2 {
 
 .secondary-heading {
   text-align: center;
+  font-weight: lighter;
   font-size: 52px;
   padding-top: 10%;
   color: black;
@@ -375,6 +376,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 150px;
   z-index: 500;
+  font-weight: lighter;
 }
 
 /* Slider */
@@ -640,14 +642,12 @@ h2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-left: 120px;
-}
-
-.animal-tour-video {
-  display: inline-block;
+  text-align: center;
+  justify-content: center;
 }
 
 .tour-video-content {
+  padding: 0;
   height: 600px;
   width: 600px;
 }
@@ -690,9 +690,13 @@ h2 {
   padding-bottom: 10%;
 }
 
-.creative-grid {
+.creative-grid  {
   display: flex;
-  justify-content: space-between;
+   justify-content: space-evenly;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+
 }
 
 .creative-activities h2 {
@@ -702,21 +706,33 @@ h2 {
 }
 
 .creative-item {
+  text-align: center;
   width: 100%;
+  flex-basis: calc(100% / 3);
+  align-items: center;
+  padding: 20px;
 }
+
+.creative-item:nth-child(3) {
+  margin-top: 50px;
+}
+
 
 .creative-item h3 {
   text-align: center;
 }
 
+.creative-item .creative-des {
+  margin-top: 30px;
+}
+
 .creative-item p {
   color: #e3e3e3;
-  padding: 15px;
+  line-height: 50px;
 }
 
 .creative-item img {
-  align-items: center;
-  width: 98%;
+  width: 750px;
   height: 450px;
 }
 
@@ -740,7 +756,8 @@ h2 {
 }
 
 .newsletter {
-  font-family :'Raleway';
+  font-family: 'Roboto';
+  font-weight: lighter;
   background-color: #19191c;
   color: #e3e3e3;
   border-top: 1px solid #e3e3e3;
@@ -766,6 +783,7 @@ textarea#find-us {
 
 .newsletter h2 {
   text-align: center;
+  font-weight: lighter;
 }
 
 input {
