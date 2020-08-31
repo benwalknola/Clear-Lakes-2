@@ -155,7 +155,7 @@ body {
 
 .header {
 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/forest.jpg);
-height: 180vh;
+height: 140vh;
 width: 100%;
 background-position: center;
 background-repeat: no-repeat;
@@ -264,6 +264,7 @@ h2 {
   z-index: 300;
 }
 
+
 .physical-activities p {
   color: black;
 }
@@ -365,14 +366,19 @@ h2 {
   background-color: whitesmoke;
   border-bottom: 1px solid whitesmoke;
   margin-top: 0;
+  border-top: 1px solid whitesmoke;
   position: relative;
 }
 
+.animal-slider-section {
+  background-color: #1b1b1f;
+}
+
 .animals-section h2 {
-  color: #19191c;
+  color: whitesmoke;
   text-align: center;
   font-size: 60px;
-  margin-top: 0;
+  padding-top: 150px;
   margin-bottom: 150px;
   z-index: 500;
   font-weight: lighter;
@@ -562,6 +568,15 @@ h2 {
   color: #333;
 }
 
+.slider-des {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 25px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+
 
 
 /* Slide 1 */
@@ -694,6 +709,7 @@ h2 {
   background-color: #1b1b1f;
   color: #e3e3e3;
   padding-top: 1px;
+  padding-bottom: 50px;
 }
 
 .creative-grid  {
@@ -839,7 +855,7 @@ input#for-us {
 }
 
 input[type="submit"] {
-  font-family: 'Raleway';
+  font-family: 'Roboto';
   color: #e3e3e3;
   font-size: 15px;
   background-color: #19191c;
@@ -927,6 +943,91 @@ input[type="submit"]:hover {
    color: grey;
    transition: ease .2s;
  }
+
+
+ /* Jquery Animations */
+
+ .js--wp-1 {
+  opacity: 0;
+}
+
+.js--wp-1 .animated {
+  opacity: 1;
+}
+
+.js--wp-2 {
+  opacity: 0;
+}
+
+.js--wp-2 .animated {
+  opacity: 1;
+}
+
+.js--wp-3 {
+  opacity: 0;
+}
+
+.js--wp-3 .animated {
+  opacity: 1;
+}
+
+.js--wp-4 {
+  opacity: 0;
+}
+
+.js--wp-4 .animated {
+  opacity: 1;
+}
+
+
+.js--wp-5 {
+  opacity: 0;
+}
+
+.js--wp-5 .animated {
+  opacity: 1;
+}
+
+.js--wp-6 {
+  opacity: 0;
+}
+
+.js--wp-6 .animated {
+  opacity: 1;
+}
+
+.js--wp-7 {
+  opacity: 0;
+}
+
+.js--wp-7 .animated {
+  opacity: 1;
+}
+
+.js--wp-8 {
+  opacity: 0;
+}
+
+.js--wp-8 .animated {
+  opacity: 1;
+}
+
+.js--wp-9 {
+  opacity: 0;
+}
+
+.js--wp-9 .animated {
+  opacity: 1;
+}
+
+.js--wp-10 {
+  opacity: 0;
+}
+
+.js--wp-10 .animated {
+  opacity: 1;
+}
+
 
 
  @media screen and (max-width: 500px) {
